@@ -15,10 +15,10 @@ jobs:
         include:
           - os: windows-latest
             msvc_version: Visual Studio 17 2022
-            targetZip: crosswindow-${{ github.ref_name }}-msvc2022.zip
+            targetZip: crosswindow-graphics-${{ github.ref_name }}-msvc2022.zip
           - os: windows-2019
             msvc_version: Visual Studio 16 2019
-            targetZip: crosswindow-${{ github.ref_name }}-msvc2019.zip
+            targetZip: crosswindow-graphics-${{ github.ref_name }}-msvc2019.zip
     runs-on: ${{ matrix.os }}
     env:
       libraryName: crosswindow-graphics
