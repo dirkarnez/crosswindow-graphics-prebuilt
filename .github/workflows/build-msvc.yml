@@ -53,6 +53,7 @@ jobs:
           cd CrossWindow-Graphics && ^
           cmake.exe -G "${{ matrix.msvc_version }}" ^
           -DCMAKE_BUILD_TYPE=Release ^
+          -DXGFX_API=OPENGL ^
           -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" ^
           -B./cmake-build &&^
           cd cmake-build &&^
